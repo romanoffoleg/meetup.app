@@ -1,7 +1,7 @@
 @import "../../config.less";
 @import "../../blocks/header/header.less";
 
-.events-list {
+.user-list {
 	display: flex;
 	flex-direction: column;
 
@@ -26,15 +26,15 @@
 			color: #000000;
 		}
 
-		&__name, &__description {
+		&__name, &__status {
 			padding-left: 13px;
 		}
 
-		&__location {
+		&__id {
 			padding-right: 13px;
 		}
 
-		&__location, &__description {
+		&__status, &__id {
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: normal;
@@ -48,10 +48,21 @@
 
 		}
 
-		&__description {
+		&__status {
 			margin-top: 5px;
 
 			max-width: 90%;
 		}
+
+		&__add {
+			display: inline-block;
+		}
+	}
+}
+
+.user-search {
+	input {
+		width: 100%;
+		padding: 10px 15px;
 	}
 }

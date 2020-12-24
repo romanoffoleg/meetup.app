@@ -33,7 +33,7 @@ document.onreadystatechange = function(){
 		}		
 		for(var  i = 1; i <= Dlast; i++) {
 	  		if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-	    			calendar += '<td class="today">' + i;
+	    			calendar += '<td class="events__schedule__month_active">' + i;
 	  		} else{
 	    		calendar += '<td>' + i;
 	 		}

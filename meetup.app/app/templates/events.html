@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="robots" content="index,follow">
+
+			<title>meetup - События</title>
+
+		<meta name="description" content="">
+
+		<link rel="shortcut icon" type="image/x-icon" href="">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="../static/css/events.css">
+		
+		<script src="../static/js/pages/events.js" async></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper header_top">
+				<div class="header__title">
+					<h1>Мои События</h1>
+				</div>
+				<div class="header__button">
+					<a><img src="../static/img/icons/add.svg" alt=""></a>
+				</div>
+			</div>
+			<nav class="header__wrapper header_bottom header__nav">
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/home.svg" alt="">
+					<span>Главная</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/events.svg" alt="">
+					<span>События</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/search.svg" alt="">
+					<span>Найти</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/message.svg" alt="">
+					<span>Чат</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<div style="background-image: url('../static/img/account/profile1/squirrel.jpg')" class="header__nav__item__img_size24"></div>
+					<span>Профиль</span>
+				</a>
+			</nav>
+		</header>
+		<div class="clr"></div>
+		<div class="events">
+			<div class="events__tabs">
+				<div class="events__tabs__item events__tabs__item_active" id="showActive">Активные</div>
+				<div class="events__tabs__item" id="showSchedule">Календарь</div>
+			</div>
+			<div id="active">
+				<!-- if message-list == empty -->
+					<div class="events__list events__list_empty">
+						<h5 class="events__list_empty__title">Список предстоящих событий пуст</h5>
+						<a class=" events__list_empty__button" href="#">Создать событие</a>
+					</div>
+				<!-- else -->
+				<div class="events__list">
+					<div class="events__list__item">
+						<div class="events__list__item__status"></div>
+						<div class="events__list__item__city">
+							Москва <span>ресторан Сытопьяно</span>
+						</div>
+						<div class="events__list__item__data">
+							Собираемся до 18 Дек. 2021
+						</div>
+						<div class="events__list__item__people">
+							<div class="events__list__item__people__title">Кто идёт?</div>
+							<div class="events__list__item__people__list">Олег, Виктор, Александр, Егор</div>
+						</div>
+						<hr class="events__list__item__line">
+						<div class="clr"></div>
+						<div class="flex-row">
+							<a href="#" class="events__list__item__button">Отменить событие</a>
+							<div class="events__list__item__id">#475</div>
+						</div>
+					</div>
+					<div class="events__list__item">
+						<div class="events__list__item__status"></div>
+						<div class="events__list__item__city">
+							Москва <span>ресторан Сытопьяно</span>
+						</div>
+						<div class="events__list__item__data">
+							Собираемся до 18 Дек. 2021
+						</div>
+						<div class="events__list__item__people">
+							<div class="events__list__item__people__title">Кто идёт?</div>
+							<div class="events__list__item__people__list">Олег, Виктор, Александр, Егор</div>
+						</div>
+						<hr class="events__list__item__line">
+						<div class="clr"></div>
+						<div class="flex-row">
+							<a href="#" class="events__list__item__button">Отменить событие</a>
+							<div class="events__list__item__id">#475</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="schedule">
+				<div class="events__schedule">
+					<table id="events__schedule__month">
+					  <thead>
+						    <tr>
+						    	<td>‹</td>
+						    	<td colspan="5"></td>
+						    	<td>›</td>
+						    </tr>
+						    <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+						</thead>
+						<tbody>
+					    </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+<script>
+
+</script>
+	</body>
+</html>

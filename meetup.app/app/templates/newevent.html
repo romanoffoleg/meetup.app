@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="robots" content="index,follow">
+
+			<title>meetup - Создание мероприятия</title>
+
+		<meta name="description" content="">
+
+		<link rel="shortcut icon" type="image/x-icon" href="">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="../static/css/newevent.css">
+		
+		<script src="../static/js/pages/newevent.js" async></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper header_top">
+				<div class="header__button">
+					<a><img src="../static/img/icons/arrow_back.svg" alt=""></a>
+				</div>
+				<div class="header__title">
+					<h1></h1>
+				</div>
+			</div>
+			<nav class="header__wrapper header_bottom header__nav">
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/home.svg" alt="">
+					<span>Главная</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/events.svg" alt="">
+					<span>События</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/search.svg" alt="">
+					<span>Найти</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/message.svg" alt="">
+					<span>Чат</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<div style="background-image: url('../static/img/account/profile1/squirrel.jpg')" class="header__nav__item__img_size24"></div>
+					<span>Профиль</span>
+				</a>
+			</nav>
+		</header>
+		<div class="clr"></div>
+		<div class="container">
+			<form action="" class="newevent">
+				<div class="flex-row_center">
+					<div class="newevent__image" style="background-image: url('../static/img/events/name1/1.png" onclick='f.click()'></div>
+					<input type="file" id="f" accept="image/*" hidden>
+					<input type="text" class="newevent__name" placeholder="Название события" placeholder>
+				</div>
+				<div class="newevent__title">Выбор категории</div>
+				<input type="text" class="newevent__data" placeholder="Информация" placeholder>
+				<div class="newevent__title">Место</div>
+				<input type="text" class="newevent__data" placeholder="Место" placeholder>
+				<div class="newevent__title">Время</div>
+				<input type="text" class="newevent__data" placeholder="Время" placeholder>
+				<div class="newevent__title">Цена</div>
+				<input type="text" class="newevent__data" placeholder="Цена" placeholder>
+				<div class="newevent__title">Расскажите о встрече</div>
+				<input type="text" class="newevent__data textarea" placeholder="Комментарии" placeholder>
+				<a href="#" type="submit" class="newevent__button">Создать событие</a>
+			</form>
+		</div>
+		<div class="clr"></div>
+	</body>
+</html>

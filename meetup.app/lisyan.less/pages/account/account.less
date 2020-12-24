@@ -1,0 +1,103 @@
+@import "../../config.less";
+@import "../../blocks/header/header.less";
+
+.account {
+	&__data {
+
+		display: flex;
+		justify-content: flex-start;
+
+		&__column {
+			display: flex;
+			flex-direction: column;
+
+			&__img {
+				position: relative;
+
+				margin-right: 11px;
+
+				height: 71px;
+				width: 71px;
+				
+				background-size: 71px; 
+				background-repeat: no-repeat; 
+				background-position: center;
+
+				border-radius: 50%;
+
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					width: 33px;
+					height: 33px;
+
+					position: absolute;
+					right: -3.5px;
+					bottom: -3.5px;
+
+					background-color: #191E24;
+					border-radius: 50%;
+				}
+			}
+
+			&__name {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 17.5px;
+
+				line-height: 33px;
+				letter-spacing: 0.5px;
+
+				color: #000000;
+			}
+
+			&__status {
+				margin-top: 21px;
+			}
+
+			&__url {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 13.5px;
+
+				line-height: 21px;
+				letter-spacing: 0.17px;
+
+				color: #000000;
+			}
+
+		}
+	}
+
+	&__label {
+
+		margin-top: 20px;
+
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.5px;
+
+		line-height: 21px;
+		letter-spacing: 0.17px;
+
+		color: #000000;
+	}
+
+	&__email, &__password {
+		display: block;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+
+		line-height: 21px;
+		letter-spacing: 0.33px;
+
+		color: #616161;
+	}
+}

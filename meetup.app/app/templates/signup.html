@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="robots" content="index,follow">
+
+			<title>meetup - Регистрация</title>
+
+		<meta name="description" content="">
+
+		<link rel="shortcut icon" type="image/x-icon" href="">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="../static/css/signup.css">
+		
+		<script src="../static/js/pages/signup.js" async></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper header_top">
+				<div class="header__button">
+					<a><img src="../static/img/icons/close.svg" alt=""></a>
+				</div>
+				<div class="header__title">
+					<h1>Регистрация</h1>
+				</div>
+				<div class="header__button"></div>
+			</div>
+			<nav class="header__wrapper header_bottom header__nav">
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/home.svg" alt="">
+					<span>Главная</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/events.svg" alt="">
+					<span>События</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/search.svg" alt="">
+					<span>Найти</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/message.svg" alt="">
+					<span>Чат</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<div style="background-image: url('../static/img/account/profile1/squirrel.jpg')" class="header__nav__item__img_size24"></div>
+					<span>Профиль</span>
+				</a>
+			</nav>
+		</header>
+		<div class="clr"></div>
+		<div class="container">
+			<form class="signup" action="" method="POST" id="signup">
+				<div class="signup__wrapper" id="signup__step1">
+					<div class="signup__title">Как вас зовут?</div>
+					<div class="signup__subtitle">Укажите имя, которое будет отображаться в<br> Вашем профиле</div>
+					<input class="signup__input" id="name" type="text" placeholder="Введите имя" required>
+					<div class="signup__error" id="name__error"></div>
+				</div>
+				<div class="signup__wrapper" id="signup__step2">
+					<div class="signup__title">Введите пароль</div>
+					<div class="signup__subtitle">Придумайте пароль, чтобы обезопасить доступ в<br> ваш аккаунт</div>
+					<input class="signup__input" id="password" type="password" placeholder="Введите пароль" required>
+					<div class="signup__error" id="password__error"></div>
+				</div>
+				<div class="signup__wrapper" id="signup__step3">
+					<div class="signup__title">Введите электронную почту</div>
+					<div class="signup__subtitle">Электронная почта потребуется для<br> подтверждения, что это вы</div>
+					<input class="signup__input" id="email" type="email" placeholder="Введите E-mail" required>
+					<div class="signup__error" id="email__error"></div>
+				</div>
+				<div class="signup__wrapper" id="signup__step4">
+					<div class="signup__title">Подтвердите адрес почты</div>
+					<div class="signup__subtitle">Введите код, который мы отправили<br> Вам на электронную почту</div>
+					<input class="signup__input" id="code" type="text" placeholder="Введите код" required>
+					<div class="signup__error" id="code__error"></div>
+				</div>
+				<a class="signup__button" id="jscontiniue">Продолжить</a>
+			</form>
+		</div>
+		<div class="clr"></div>
+	</body>
+</html>

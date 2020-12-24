@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="robots" content="index,follow">
+
+			<title>meetup - Вход</title>
+
+		<meta name="description" content="">
+
+		<link rel="shortcut icon" type="image/x-icon" href="">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="../static/css/login.css">
+		
+		<script src="../static/js/pages/login.js" async></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper header_top">
+				<div class="header__button">
+					<a><img src="../static/img/icons/close.svg" alt=""></a>
+				</div>
+				<div class="header__title">
+					<h1>Вход</h1>
+				</div>
+				<div class="header__button"></div>
+			</div>
+			<nav class="header__wrapper header_bottom header__nav">
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/home.svg" alt="">
+					<span>Главная</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/events.svg" alt="">
+					<span>События</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/search.svg" alt="">
+					<span>Найти</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/message.svg" alt="">
+					<span>Чат</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<div style="background-image: url('../static/img/account/profile1/squirrel.jpg')" class="header__nav__item__img_size24"></div>
+					<span>Профиль</span>
+				</a>
+			</nav>
+		</header>
+		<div class="clr"></div>
+		<div class="container">
+			<form class="login" action="" method="POST">
+				<div class="login__title">Введите имя</div>
+				<div class="login__subtitle">Введите имя и пароль, которые Вы указали при<br> регистрации</div>
+				<input class="login__input login__input_error" type="text" placeholder="Введите имя">
+				<div class="login__error" style="display: block;">Неверное имя!</div>
+				<div class="login__title">Введите пароль</div>
+				<input class="login__input" type="password" placeholder="Введите пароль">
+				<div class="login__error">Неправильный пароль!</div>
+				<a class="login__button">Войти</a>
+			</form>
+		</div>
+		<div class="clr"></div>
+	</body>
+</html>

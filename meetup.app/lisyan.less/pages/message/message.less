@@ -1,0 +1,128 @@
+@import "../../config.less";
+@import "../../blocks/header/header.less";
+
+.message-list {
+	padding: 0;
+	&_empty {
+		width: 100%;
+		height: 100vh;
+		margin-top: -57px;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&__title {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: #6E7882;
+		}
+
+		&__button {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: #191E24;
+			padding: 12px 40px;
+			margin-top: 13px;
+			background: #C5E1A5;
+			border-radius: 100px;
+		}
+	}
+}
+
+.message {
+	position: relative;
+
+	width: 100%;
+
+	display: flex;
+	justify-content: flex-start;
+
+	padding: 29px 15px 16px 15px;
+
+	box-shadow: inset 0px -1px 0px rgba(218, 221, 223, 0.5);
+
+	&__column {
+
+		&:nth-child(2) {
+			flex-grow: 1;
+		}
+
+		&__img {
+			margin-right: 13px;
+
+			height: 41px;
+			width: 41px;
+			
+			background-size: 41px; 
+			background-repeat: no-repeat; 
+			background-position: center;
+
+			border-radius: 50%;
+
+		}
+
+		&__name {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13.5px;
+
+			line-height: 21px;
+			letter-spacing: 0.17px;
+
+			color: #000000;
+		}
+
+		&__status {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 11.5px;
+
+			line-height: 21px;
+			letter-spacing: 0.33px;
+
+			color: #616161;
+		}
+
+		&__text {
+			margin-top: 3px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+
+			color: #616161;
+		}
+
+		&__quantity {
+			padding: 1px 9px 0 9px;
+			line-height: 20px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 11.5px;
+			color: #757575;
+			background: #C5E1A5;
+			border-radius: 20px;
+		}
+
+		&__time {
+			margin-right: 9px;
+			color: #757575;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+}

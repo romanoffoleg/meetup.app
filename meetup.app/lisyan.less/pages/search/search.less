@@ -1,0 +1,57 @@
+@import "../../config.less";
+@import "../../blocks/header/header.less";
+
+.events-list {
+	display: flex;
+	flex-direction: column;
+
+	&__item {
+
+		display: block;
+
+		background: #FFFFFF;
+		box-shadow: inset 0px -1px 0px rgba(218, 221, 223, 0.5);
+
+		padding: 13px 0 9px 0;
+
+		&__name {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+
+			line-height: 20px;
+			letter-spacing: 0.17px;
+
+			color: #000000;
+		}
+
+		&__name, &__description {
+			padding-left: 13px;
+		}
+
+		&__location {
+			padding-right: 13px;
+		}
+
+		&__location, &__description {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+
+			line-height: 20px;
+			letter-spacing: 0.33px;
+
+			color: #616161;
+
+
+		}
+
+		&__description {
+			margin-top: 5px;
+
+			max-width: 90%;
+		}
+	}
+}

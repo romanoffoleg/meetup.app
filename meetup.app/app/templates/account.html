@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="robots" content="index,follow">
+
+			<title>meetup - Мой профиль</title>
+
+		<meta name="description" content="">
+
+		<link rel="shortcut icon" type="image/x-icon" href="">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="../static/css/account.css">
+		
+		<script src="../static/js/pages/account.js" async></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper header_top">
+				<div class="header__button">
+					<a><img src="../static/img/icons/arrow_back.svg" alt=""></a>
+				</div>
+				<div class="header__title">
+					<h1>Мой профиль</h1>
+				</div>
+				<div class="header__button">
+					<a><img src="../static/img/icons/add_friend.svg" alt=""></a>
+				</div>
+			</div>
+			<nav class="header__wrapper header_bottom header__nav">
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/home.svg" alt="">
+					<span>Главная</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/events.svg" alt="">
+					<span>События</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/search.svg" alt="">
+					<span>Найти</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<img src="../static/img/icons/message.svg" alt="">
+					<span>Чат</span>
+				</a>
+				<a href="#" class="header__nav__item">
+					<div style="background-image: url('../static/img/account/profile1/squirrel.jpg')" class="header__nav__item__img_size24"></div>
+					<span>Профиль</span>
+				</a>
+			</nav>
+		</header>
+		<div class="clr"></div>
+		<div class="container">
+			<form class="account" action="" method="POST">
+				<div class="account__data">
+					<div class="account__data__column">
+						<div class="account__data__column__img"  style="background-image: url('../static/img/account/profile1/squirrel.jpg')">
+							<a><img src="../static/img/icons/edit.svg" alt=""></a>
+						</div>	
+					</div>
+					<div class="account__data__column">
+						<input class="account__data__column__name" type="text" value="Белка">
+						<input class="accountt__data__status" type="text" value=":(">
+						<input class="account__data__column__url" type="text" value="@squirrel">				
+					</div>
+				</div>
+
+				<div class="account__label">Электронная почта:</div>
+				<input class="account__email" type="email" value="*******">
+
+				<div class="account__label">Изменить пароль:</div>
+				<input class="account__password" type="password" value="*******">
+				<input class="account__password" type="password" value="*******">
+			</form>
+		</div>
+		<div class="clr"></div>
+	</body>
+</html>

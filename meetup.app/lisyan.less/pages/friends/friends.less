@@ -53,6 +53,37 @@
 
 				color: #616161;
 			}
+
+			&__add, &__del {
+				padding: 3px 7px;
+				border-radius: 100px;
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 11px;
+				line-height: 24px;
+				text-align: center;
+
+				color: #DADDDF;
+				transition: opacity .3s;
+				&:hover {
+					opacity: .7;
+				}
+			}
+
+			&__add {
+				background: #000000;
+			}
+
+			&__del {
+				margin-left: 10px;
+				background: #800000;
+			}
+		}
+		&__column:nth-child(3) {
+			display: flex;
+			justify-content: flex-end;
+			flex-grow: 1;
 		}
 	}
 }

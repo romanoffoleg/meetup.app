@@ -55,6 +55,13 @@
 		<div class="clr"></div>
 		<div class="container">
 			<div class="squirrel-slider">
+				<!-- if записи закончились - display flex -->
+				<div class="squirrel-slider__empty">
+					<img class="squirrel-slider__empty__img" src="static/img/icons/smile.svg" alt="">
+					<span class="squirrel-slider__empty__text">Рядом с вами никто<br>не планирует собираться :(</span>
+				</div>
+				<!--  -->
+
 				<article class="squirrel-slider__slide">
 					<div class="squirrel-slider__slide__pictures" id="squirrelLocation">
 						<div class="squirrel-slider__slide__pictures__images">
@@ -67,8 +74,8 @@
 							<div class="squirrel-slider__slide__pictures__images__like">
 								<a href="#" id="like"><img src="static/img/icons/like.svg" alt=""></a>
 							</div>
-							<img src="static/img/events/name1/1.png" class="squirrel-slider__slide__pictures__images__item" alt="">
-							<img src="static/img/events/name1/2.png" class="squirrel-slider__slide__pictures__images__item" alt="">
+							<div class="squirrel-slider__slide__pictures__images__item" style="background-image: url('static/img/events/name1/1.png')"></div>
+							<div class="squirrel-slider__slide__pictures__images__item" style="background-image: url('static/img/events/name1/2.png')"></div>
 						</div>
 						<div class="squirrel-slider__slide__pictures__dots" id="dots">
 							<div class="squirrel-slider__slide__pictures__dots__item squirrel-slider__slide__pictures__dots__item_active"></div>

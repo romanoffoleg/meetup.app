@@ -12,6 +12,7 @@ document.onreadystatechange = function(){
 		    showSlides(slideIndex);
 		let status = false;
 
+
 			function showSlides (n) {
 			    if (n < 1) {
 			        slideIndex = slides.length;
@@ -67,5 +68,12 @@ document.onreadystatechange = function(){
 			        }
 			    }
 			}
+
+			$(".squirrel-slider__slide__info").click(function() {
+				$(".popup-event").css("display", "block");
+			});
+			$(".popup-event__header__close").click(function() {
+				$(".popup-event").css("display", "none");
+			});
 	}
 };

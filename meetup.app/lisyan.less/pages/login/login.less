@@ -58,10 +58,6 @@
 
 	}
 
-	&__input_error {
-		border-color: #FF364F;
-	}
-
 	&__button {
 		margin-top: 33px;
 
@@ -89,6 +85,8 @@
 	}
 
 	&__error {
+		text-align: center;
+		margin-top: 7px;
 		display: none;
 		font-family: Roboto;
 		font-style: normal;
@@ -96,5 +94,27 @@
 		font-size: 13.5px;
 		line-height: 15.5px;
 		color: #FF364F;
+	}
+
+	&__next-signup {
+		margin-top: 30px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+
+		letter-spacing: 0.32px;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+
+		color: #747474;
+
+		a {
+			color: #6B9EC3;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }

@@ -23,9 +23,7 @@
 	<body>
 		<header class="header">
 			<div class="header__wrapper header_top">
-				<div class="header__button">
-					<a><img src="../static/img/icons/close.svg" alt=""></a>
-				</div>
+				<div class="header__button"></div>
 				<div class="header__title">
 					<h1>Вход</h1>
 				</div>
@@ -59,12 +57,16 @@
 			<form class="login" action="" method="POST">
 				<div class="login__title">Введите имя</div>
 				<div class="login__subtitle">Введите имя и пароль, которые Вы указали при<br> регистрации</div>
-				<input class="login__input login__input_error" type="text" placeholder="Введите имя">
-				<div class="login__error" style="display: block;">Неверное имя!</div>
+				<input class="login__input" type="text" placeholder="Введите имя">
 				<div class="login__title">Введите пароль</div>
+				<div class="login__subtitle">Введите пароль, которое Вы указали<br> при регистрации</div>
 				<input class="login__input" type="password" placeholder="Введите пароль">
-				<div class="login__error">Неправильный пароль!</div>
-				<a class="login__button">Войти</a>
+				<div class="login__error" style="display: block">Неправильный логин или<br> пароль!</div>
+				<a class="login__button">Продолжить</a>
+
+				<div class="login__next-signup">
+					Нет аккаунта? <a href="">Создай новый!</a>
+				</div>
 			</form>
 		</div>
 		<div class="clr"></div>

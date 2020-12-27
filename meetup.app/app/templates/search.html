@@ -27,7 +27,7 @@
 					<a><img src="../static/img/icons/arrow_back.svg" alt=""></a>
 				</div>
 				<div class="header__title">
-					<h1>Поиск друзей</h1>
+					<h1>Добавить друга</h1>
 				</div>
 				<div class="header__button"></div>
 			</div>
@@ -55,31 +55,66 @@
 			</nav>
 		</header>
 		<div class="clr"></div>
-		<form action="" method="GET" class="user-search">
-			<input type="text" placeholder="Введите ID друга">
-		</form>
-		<div class="user-list">
-			<a class="user-list__item" href="#">
-				<div class="flex-row">
-					<div class="user-list__item__name">Олег Романов</div>
-					<div class="user-list__item__id">#id</div>
-				</div>
-				<div class="user-list__item__status">Хороший работник</div>
-			</a>
-			<a class="user-list__item" href="#">
-				<div class="flex-row">
-					<div class="user-list__item__name">Олег Романов</div>
-					<div class="user-list__item__id">#id</div>
-				</div>
-				<div class="user-list__item__status">Хороший работник</div>
-			</a>
-			<a class="user-list__item" href="#">
-				<div class="flex-row">
-					<div class="user-list__item__name">Олег Романов</div>
-					<div class="user-list__item__id">#id</div>
-				</div>
-				<div class="user-list__item__status">Хороший работник</div>
-			</a>
+		<div class="container">
+			<form action="" method="GET" class="user-search">
+				<input type="text" placeholder="Введите имя">
+			</form>
+			<div class="user-list">
+				<a class="user-list__item">
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__img" style="background-image: url('../static/img/account/profile2/oleg.jpg')"></div>
+					</div>
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__name">Романов Олег</div>
+						<div class="user-list__item__column__status">Хороший работник</div>
+					</div>
+					<div class="user-list__item__column">
+						<img src="../static/img/icons/add_friend.svg" alt="" id="add" style="display: none">
+						<img src="../static/img/icons/friend-status.svg" alt="" id="added">
+					</div>
+				</a>
+			</div>
+			<!-- Заявки в друзья -->
+			<div class="user-list2">
+				<div class="user-list2__title">Заявки в друзья:</div>
+				<div class="user-list2__subj">Пока что нет новых <br>заявок в друзья</div>
+				<a class="user-list__item">
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__img" style="background-image: url('../static/img/account/profile2/oleg.jpg')"></div>
+					</div>
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__name">Романов Олег</div>
+						<div class="user-list__item__column__status">Хороший работник</div>
+					</div>
+					<div class="user-list__item__column">
+						<img src="../static/img/icons/add_friend.svg" alt="">
+					</div>
+				</a>
+				<a class="user-list__item">
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__img" style="background-image: url('../static/img/account/profile2/oleg.jpg')"></div>
+					</div>
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__name">Романов Олег</div>
+						<div class="user-list__item__column__status">Хороший работник</div>
+					</div>
+					<div class="user-list__item__column">
+						<img src="../static/img/icons/add_friend.svg" alt="">
+					</div>
+				</a>
+				<a class="user-list__item">
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__img" style="background-image: url('../static/img/account/profile2/oleg.jpg')"></div>
+					</div>
+					<div class="user-list__item__column">
+						<div class="user-list__item__column__name">Романов Олег</div>
+						<div class="user-list__item__column__status">Хороший работник</div>
+					</div>
+					<div class="user-list__item__column">
+						<img src="../static/img/icons/add_friend.svg" alt="">
+					</div>
+				</a>
+			</div>
 		</div>
 		<div class="clr"></div>
 	</body>

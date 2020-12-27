@@ -54,10 +54,6 @@
 				color: #000000;
 			}
 
-			&__status {
-				margin-top: 21px;
-			}
-
 			&__url {
 				font-family: Roboto;
 				font-style: normal;
@@ -75,7 +71,7 @@
 
 	&__label {
 
-		margin-top: 20px;
+		margin-top: 33px;
 
 		font-family: Roboto;
 		font-style: normal;
@@ -88,8 +84,9 @@
 		color: #000000;
 	}
 
-	&__email, &__password {
+	&__status, &__email, &__password {
 		display: block;
+		width: 100%;
 		font-family: Roboto;
 		font-style: normal;
 		font-weight: normal;
@@ -99,5 +96,46 @@
 		letter-spacing: 0.33px;
 
 		color: #616161;
+	}
+
+	.flex-row_center {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__line {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-top: 13px;
+		border-bottom: 1px solid rgba(218, 221, 223, 0.5);
+	}
+
+	&__exit {
+
+		position: absolute;
+		
+		bottom: 100px;
+		padding: 11px 69px;
+
+		background: #FFFFFF;
+		box-shadow: 0px 8px 12px rgba(110, 120, 130, 0.16);
+		border-radius: 12px;
+
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+
+		text-align: center;
+
+		color: #000000;
+
+		transition: opacity .3s;
+
+		&:hover {
+			opacity: .7;
+		}
 	}
 }
